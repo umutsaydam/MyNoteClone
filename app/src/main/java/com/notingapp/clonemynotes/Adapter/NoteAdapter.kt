@@ -46,7 +46,7 @@ class NoteAdapter(private val context: Context, val listener: NotesClickListener
     fun filterNotes(filteredNote: String) {
         notesList.clear()
         fullList.forEach {
-            if (it.title.contains(filteredNote) || it.note.contains(filteredNote)) {
+            if (it.title.lowercase().contains(filteredNote) || it.note.lowercase().contains(filteredNote)) {
                 notesList.add(it)
             }
         }

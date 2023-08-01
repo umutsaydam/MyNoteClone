@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
 import android.widget.SearchView
-import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.widget.PopupMenu
 import androidx.appcompat.widget.SearchView.OnQueryTextListener
@@ -91,7 +90,6 @@ class MainActivity : AppCompatActivity(), NoteAdapter.NotesClickListener,
                     val note = result.data?.getSerializableExtra("note") as? Note
                     if (note != null) {
                         viewModel.insertNote(note)
-                        Toast.makeText(this, "Eklendi", Toast.LENGTH_SHORT).show()
                     }
                 }
             }
@@ -104,7 +102,7 @@ class MainActivity : AppCompatActivity(), NoteAdapter.NotesClickListener,
 
             override fun onQueryTextChange(newText: String?): Boolean {
                 if (newText != null) {
-                    adapter.filterNotes(newText)
+                    adapter.filterNotes(newText.trim().lowercase())
                 }
                 return true
             }
