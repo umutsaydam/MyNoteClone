@@ -5,6 +5,7 @@ import android.app.Activity
 import android.app.Dialog
 import android.content.Intent
 import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -77,6 +78,8 @@ class AddNoteActivity : AppCompatActivity() {
         binding.imgBg.setOnClickListener {
             val dialog = Dialog(this)
             dialog.setContentView(R.layout.dialog_bg_color)
+            dialog.window?.setDimAmount(0F)
+            dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             val colorAdapter = ColorAdapter(this)
 
             val colors = this.resources.getIntArray(R.array.noteBackgroundColor)
