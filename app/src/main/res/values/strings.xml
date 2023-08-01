@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyNotes</string>
+    <string name="note">Note</string>
+    <string name="date">Date</string>
+    <string name="title">Title</string>
+    <string name="notes">Notes</string>
+    <string name="back">Back</string>
+    <string name="done">Done</string>
+    <string name="change_bg_color">Change background color</string>
+    <string name="color">Color</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+</resources>

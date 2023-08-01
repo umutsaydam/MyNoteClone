@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="NoteColor0">#FFFFFF</color>
+    <color name="NoteColor1">#FF6263</color>
+    <color name="NoteColor2">#23C4ED</color>
+    <color name="NoteColor3">#38CC77</color>
+    <color name="NoteColor4">#D9D558</color>
+    <color name="NoteColor5">#318BD1</color>
+    <color name="NoteColor6">#D345DD</color>
+    <color name="grey">#4A4F51</color>
+
+    <array name="noteBackgroundColor">
+        <item>@color/NoteColor0</item>
+        <item>@color/NoteColor1</item>
+        <item>@color/NoteColor2</item>
+        <item>@color/NoteColor3</item>
+        <item>@color/NoteColor4</item>
+        <item>@color/NoteColor5</item>
+        <item>@color/NoteColor6</item>
+    </array>
+</resources>
